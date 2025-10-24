@@ -15,6 +15,7 @@ export default function LeftSection({
 
   const sections = [
     { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "blog", label: "Blog" },

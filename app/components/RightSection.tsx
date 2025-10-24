@@ -1,9 +1,62 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function RightSection() {
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
+  const [showContactForm, setShowContactForm] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Show thank you message
+        setShowThankYou(true);
+        // Reset form
+        setFormData({ name: "", email: "", message: "" });
+
+        // Hide thank you message and form after 4 seconds
+        setTimeout(() => {
+          setShowThankYou(false);
+          setShowContactForm(false);
+        }, 4000);
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
@@ -39,7 +92,7 @@ export default function RightSection() {
         ref={(el) => {
           sectionRefs.current[0] = el;
         }}
-        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
+        className="mb-16 mt-12 sm:mt-0 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="About me"
       >
         <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -111,11 +164,144 @@ export default function RightSection() {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section
+        id="skills"
+        ref={(el) => {
+          sectionRefs.current[1] = el;
+        }}
+        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
+        aria-label="Skills and technologies"
+      >
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+            Skills
+          </h2>
+        </div>
+        <div>
+          {/* Frontend Technologies */}
+          <div className="mb-8">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+              Frontend Technologies
+            </h3>
+            <ul className="flex flex-wrap gap-2" aria-label="Frontend technologies">
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  React.js
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Next.js
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  React Native
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Redux
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Tailwind CSS
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Backend Technologies */}
+          <div className="mb-8">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+              Backend Technologies
+            </h3>
+            <ul className="flex flex-wrap gap-2" aria-label="Backend technologies">
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Node.js
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Express.js
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  RESTful APIs
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Programming Languages */}
+          <div className="mb-8">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+              Programming Languages
+            </h3>
+            <ul className="flex flex-wrap gap-2" aria-label="Programming languages">
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  JavaScript
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  TypeScript
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Database & Tools */}
+          <div className="mb-8">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+              Database & Tools
+            </h3>
+            <ul className="flex flex-wrap gap-2" aria-label="Database and development tools">
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  MongoDB
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  MySQL
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Git
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  GitHub
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Postman
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                  Vercel
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Experience Section */}
       <section
         id="experience"
         ref={(el) => {
-          sectionRefs.current[1] = el;
+          sectionRefs.current[2] = el;
         }}
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Work experience"
@@ -256,7 +442,7 @@ export default function RightSection() {
       <section
         id="projects"
         ref={(el) => {
-          sectionRefs.current[2] = el;
+          sectionRefs.current[3] = el;
         }}
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Selected projects"
@@ -438,7 +624,7 @@ export default function RightSection() {
       <section
         id="blog"
         ref={(el) => {
-          sectionRefs.current[3] = el;
+          sectionRefs.current[4] = el;
         }}
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Blog posts"
@@ -608,7 +794,7 @@ export default function RightSection() {
       <section
         id="contact"
         ref={(el) => {
-          sectionRefs.current[4] = el;
+          sectionRefs.current[5] = el;
         }}
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-40 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Contact information"
@@ -623,16 +809,18 @@ export default function RightSection() {
             I'm always Open to opportunities to contribute and grow <br />
             happy to connect!
           </p>
-          <a
-            className="inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group"
-            href="mailto:choudhariyash7890@gmail.com"
+          <button
+            onClick={() => setShowContactForm(!showContactForm)}
+            className="inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group transition-colors"
           >
-            <span>Get in touch</span>
+            <span>{showContactForm ? "Hide form" : "Get in touch"}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+              className={`ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none ${
+                showContactForm ? "rotate-90" : ""
+              }`}
               aria-hidden="true"
             >
               <path
@@ -641,7 +829,108 @@ export default function RightSection() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </a>
+          </button>
+
+          {/* Contact Form */}
+          <div
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              showContactForm && !showThankYou
+                ? "max-h-[600px] opacity-100 mt-8"
+                : "max-h-0 opacity-0"
+            }`}
+          >
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Name Field */}
+              <div className="group">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-slate-200 mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-transparent text-slate-200 px-0 py-2 border-0 border-b-2 border-slate-600 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500"
+                  placeholder="Your name"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div className="group">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-slate-200 mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-transparent text-slate-200 px-0 py-2 border-0 border-b-2 border-slate-600 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              {/* Message Field */}
+              <div className="group">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-slate-200 mb-2"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                  rows={4}
+                  className="w-full bg-transparent text-slate-200 px-0 py-2 border-0 border-b-2 border-slate-600 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500 resize-none"
+                  placeholder="Your message..."
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center px-6 py-3 bg-teal-400/10 hover:bg-teal-400/20 text-teal-300 font-medium rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
+                {!isSubmitting && (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="ml-2 h-4 w-4"
+                  >
+                    <path d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z" />
+                  </svg>
+                )}
+              </button>
+            </form>
+          </div>
+
+          {/* Thank You Message */}
+          <div
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              showThankYou ? "max-h-20 opacity-100 mt-8" : "max-h-0 opacity-0"
+            }`}
+          >
+            <p className="text-slate-200 text-base leading-relaxed">
+              Thanks! I'll get back to you soon.
+            </p>
+          </div>
         </div>
       </section>
 

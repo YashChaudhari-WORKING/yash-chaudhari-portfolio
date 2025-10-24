@@ -8,24 +8,43 @@ import MobileHeader from "./components/MobileHeader";
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [showMobileHeader, setShowMobileHeader] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "experience", "projects", "blog", "contact"];
+      const sections = ["about", "skills", "experience", "projects", "blog", "contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
-      for (const sectionId of sections) {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(sectionId);
-            break;
+      // Check if user has scrolled to the bottom of the page
+      const isAtBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 10; // 10px threshold
+
+      // If at bottom, always set to contact
+      if (isAtBottom) {
+        setActiveSection("contact");
+      } else {
+        // Normal section detection
+        for (const sectionId of sections) {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            const { offsetTop, offsetHeight } = element;
+            if (
+              scrollPosition >= offsetTop &&
+              scrollPosition < offsetTop + offsetHeight
+            ) {
+              setActiveSection(sectionId);
+              break;
+            }
           }
         }
+      }
+
+      // Show mobile header only when scrolled past about section
+      const aboutElement = document.getElementById("about");
+      if (aboutElement) {
+        const aboutBottom = aboutElement.offsetTop + aboutElement.offsetHeight;
+        setShowMobileHeader(window.scrollY > aboutBottom - 100); // 100px before about ends
       }
     };
 
@@ -65,8 +84,11 @@ export default function Home() {
       ></div>
 
       <div className="min-h-screen relative">
-        {/* Mobile Header - only visible on mobile */}
-        <MobileHeader activeSection={activeSection} />
+        {/* Mobile Header - only visible on mobile and when scrolled past about */}
+        <MobileHeader
+          activeSection={activeSection}
+          isVisible={showMobileHeader}
+        />
 
         {/* Main Content */}
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
