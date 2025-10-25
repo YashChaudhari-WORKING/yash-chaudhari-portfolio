@@ -95,69 +95,69 @@ export default function RightSection() {
         className="mb-16 mt-12 sm:mt-0 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="About me"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/95 light:bg-white/95 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 light:text-slate-900 lg:sr-only">
             About
           </h2>
         </div>
         <div>
-          <p className="mb-4 text-slate-400 leading-relaxed">
+          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
             I'm Yash, a{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               full-stack developer
             </span>{" "}
             passionate about creating reliable web and mobile solutions. I work
-            with <span className="font-medium text-slate-200">React</span>,{" "}
-            <span className="font-medium text-slate-200">Next.js</span>, and{" "}
-            <span className="font-medium text-slate-200">React Native</span> to
+            with <span className="font-medium text-slate-200 light:text-slate-900">React</span>,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">Next.js</span>, and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">React Native</span> to
             build scalable applications that solve real problems. My strength
             lies in understanding both the{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               technical and business sides
             </span>{" "}
             of development, allowing me to contribute meaningfully to the
             complete development process while collaborating effectively with
             cross-functional teams.
           </p>
-          <p className="mb-4 text-slate-400 leading-relaxed">
+          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
             I'm proficient in{" "}
-            <span className="font-medium text-slate-200">JavaScript</span>,{" "}
-            <span className="font-medium text-slate-200">TypeScript</span>,{" "}
-            <span className="font-medium text-slate-200">Node.js</span>, and{" "}
-            <span className="font-medium text-slate-200">Redux</span>, with
+            <span className="font-medium text-slate-200 light:text-slate-900">JavaScript</span>,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">TypeScript</span>,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">Node.js</span>, and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">Redux</span>, with
             hands-on experience in{" "}
-            <span className="font-medium text-slate-200">MongoDB</span>,{" "}
-            <span className="font-medium text-slate-200">RESTful APIs</span>. In
+            <span className="font-medium text-slate-200 light:text-slate-900">MongoDB</span>,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">RESTful APIs</span>. In
             my current role, I've contributed to architecting{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               enterprise websites
             </span>{" "}
-            and <span className="font-medium text-slate-200">HRMS systems</span>
+            and <span className="font-medium text-slate-200 light:text-slate-900">HRMS systems</span>
             , taking ownership of features from planning through deployment. I
             enjoy working closely with teams to ensure our solutions perform
             well in production and meet actual Client needs.
           </p>
-          <p className="text-slate-400 leading-relaxed">
+          <p className="text-slate-400 light:text-slate-600 leading-relaxed">
             I believe in{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               continuous learning
             </span>{" "}
             and staying current with technology trends. I've built projects like
             an{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               e-commerce platform
             </span>{" "}
             with Stripe integration and a{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               project management tool (linear.app)
             </span>{" "}
             with real-time collaboration features. While I'm still growing as a
             developer, I approach each project with attention to{" "}
-            <span className="font-medium text-slate-200">
+            <span className="font-medium text-slate-200 light:text-slate-900">
               architectural decisions
             </span>{" "}
             and{" "}
-            <span className="font-medium text-slate-200">user experience</span>.
+            <span className="font-medium text-slate-200 light:text-slate-900">user experience</span>.
             I'm looking for opportunities where I can contribute to meaningful
             solutions while expanding my skills alongside experienced teammates.
           </p>
@@ -173,40 +173,40 @@ export default function RightSection() {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Skills and technologies"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/95 light:bg-white/95 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 light:text-slate-900 lg:sr-only">
             Skills
           </h2>
         </div>
         <div>
           {/* Frontend Technologies */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
               Frontend Technologies
             </h3>
             <ul className="flex flex-wrap gap-2" aria-label="Frontend technologies">
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   React.js
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Next.js
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   React Native
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Redux
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Tailwind CSS
                 </div>
               </li>
@@ -215,22 +215,22 @@ export default function RightSection() {
 
           {/* Backend Technologies */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
               Backend Technologies
             </h3>
             <ul className="flex flex-wrap gap-2" aria-label="Backend technologies">
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Node.js
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Express.js
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   RESTful APIs
                 </div>
               </li>
@@ -239,17 +239,17 @@ export default function RightSection() {
 
           {/* Programming Languages */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
               Programming Languages
             </h3>
             <ul className="flex flex-wrap gap-2" aria-label="Programming languages">
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   JavaScript
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   TypeScript
                 </div>
               </li>
@@ -258,37 +258,37 @@ export default function RightSection() {
 
           {/* Database & Tools */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
               Database & Tools
             </h3>
             <ul className="flex flex-wrap gap-2" aria-label="Database and development tools">
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   MongoDB
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   MySQL
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Git
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   GitHub
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Postman
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-sm font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors">
+                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
                   Vercel
                 </div>
               </li>
@@ -306,8 +306,8 @@ export default function RightSection() {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Work experience"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/95 light:bg-white/95 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 light:text-slate-900 lg:sr-only">
             Experience
           </h2>
         </div>
@@ -315,15 +315,15 @@ export default function RightSection() {
           <ol className="group/list">
             <li className="mb-12">
               <div className="group relative grid pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
                   2024 — Present
                 </header>
                 <div className="z-10 sm:col-span-6">
-                  <h3 className="font-medium leading-snug text-slate-200">
+                  <h3 className="font-medium leading-snug text-slate-200 light:text-slate-900">
                     <div>
                       <a
-                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group/link text-base"
                         href="https://olioglobaladtech.com/"
                         target="_blank"
                         rel="noreferrer"
@@ -352,7 +352,7 @@ export default function RightSection() {
                       </a>
                     </div>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     At Olio Global AdTech, I've been contributing to enterprise
                     solutions while learning from experienced developers. I
                     helped develop websites for RheinMain and Atlas Technology
@@ -361,7 +361,7 @@ export default function RightSection() {
                     marketing landing pages that measurably improved campaign
                     engagement rates.
                   </p>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     I've also contributed to building an HRMS system with React
                     Native, developing mobile app features for leave management
                     that now serve over 100 employees. Currently, I'm working on
@@ -375,32 +375,32 @@ export default function RightSection() {
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         React
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Next.js
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         React Native
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Redux
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Node.js
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         MongoDB
                       </div>
                     </li>
@@ -414,7 +414,7 @@ export default function RightSection() {
           {/* Resume Link */}
           <div className="mt-12">
             <a
-              className="inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group"
+              className="inline-flex items-center font-medium leading-tight text-slate-200 light:text-slate-900 hover:text-teal-300 light:hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group"
               href="/static/Yash_Chaudhari_Full_Stack_Developer_Resume.pdf"
               target="_blank"
               rel="noreferrer"
@@ -438,17 +438,126 @@ export default function RightSection() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Education Section */}
       <section
-        id="projects"
+        id="education"
         ref={(el) => {
           sectionRefs.current[3] = el;
         }}
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
+        aria-label="Education background"
+      >
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/95 light:bg-white/95 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 light:text-slate-900 lg:sr-only">
+            Education
+          </h2>
+        </div>
+        <div>
+          <ol className="group/list">
+            {/* Master's Degree */}
+            <li className="mb-12">
+              <div className="group relative grid pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                  May 2022 — July 2024
+                </header>
+                <div className="z-10 sm:col-span-6">
+                  <h3 className="font-medium leading-snug">
+                    <div className="text-base text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 transition-colors">
+                      Master of Science in Computer Science
+                    </div>
+                  </h3>
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
+                    Shri Shivaji Vidya Prasarak Sanstha's Science College, Dhule, Maharashtra, India
+                  </p>
+                  <div className="mt-3 flex items-start gap-2">
+                    <div className="mt-0.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="h-4 w-4 text-teal-300 light:text-teal-600"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-teal-300 light:text-teal-600">
+                        CGPA: 9.02
+                      </p>
+                      <p className="mt-1 text-sm leading-normal text-slate-400">
+                        Ranked 3rd in MSc Computer Science (2024)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            {/* Bachelor's Degree */}
+            <li className="mb-12">
+              <div className="group relative grid pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                  May 2019 — May 2022
+                </header>
+                <div className="z-10 sm:col-span-6">
+                  <h3 className="font-medium leading-snug">
+                    <div className="text-base text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 transition-colors">
+                      Bachelor of Science in Computer Science
+                    </div>
+                  </h3>
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
+                    Shri Shivaji Vidya Prasarak Sanstha's Science College, Dhule, Maharashtra, India
+                  </p>
+                  <div className="mt-3 flex items-start gap-2">
+                    <div className="mt-0.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="h-4 w-4 text-teal-300 light:text-teal-600"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-teal-300 light:text-teal-600">
+                        CGPA: 9.42
+                      </p>
+                      <p className="mt-1 text-sm leading-normal text-slate-400">
+                        Ranked 1st in BSc Computer Science (2022)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section
+        id="projects"
+        ref={(el) => {
+          sectionRefs.current[4] = el;
+        }}
+        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Selected projects"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/95 light:bg-white/95 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 light:text-slate-900 lg:sr-only">
             Projects
           </h2>
         </div>
@@ -457,11 +566,11 @@ export default function RightSection() {
           <ul className="group/list">
             <li className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <div className="z-10 sm:order-2 sm:col-span-6">
                   <h3>
                     <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group/link text-base"
                       href="https://github.com/YashChaudhari-WORKING/Bento"
                       target="_blank"
                       rel="noreferrer"
@@ -488,12 +597,12 @@ export default function RightSection() {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     Developing a comprehensive project management platform using
                     Next.js and TypeScript with real-time team collaboration,
                     issue tracking, and sprint planning capabilities.
                   </p>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     Building features for task assignment, progress tracking,
                     team workflows, and project roadmaps with intuitive
                     drag-and-drop interface and status management.
@@ -503,22 +612,22 @@ export default function RightSection() {
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Next.js
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Express
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Redux
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Pusher.js
                       </div>
                     </li>
@@ -529,23 +638,18 @@ export default function RightSection() {
                 </span>
               </div>
             </li>
-            {/* Add more project items here */}
-          </ul>
-        </div>
 
-        <div>
-          <ul className="group/list">
             <li className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <div className="z-10 sm:order-2 sm:col-span-6">
                   <h3>
                     <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group/link text-base"
                       href="https://github.com/YashChaudhari-WORKING/MERN-_-E-Com-_-Online-store-"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="Bento (Linear.app clone)"
+                      aria-label="E-Commerce Online Store"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <span>
@@ -568,17 +672,17 @@ export default function RightSection() {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     Built a full-featured e-commerce platform using MERN stack
                     with user authentication, product catalog, shopping cart
                     functionality, and order management system.
                   </p>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     Integrated Stripe payment gateway for secure transactions
                     and implemented JWT-based authentication with bcrypt
                     password encryption for enhanced security.
                   </p>
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
                     Developed admin dashboard for inventory management, order
                     tracking, and user management with automated email
                     notifications via Nodemailer for order confirmations and
@@ -589,22 +693,22 @@ export default function RightSection() {
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Next.js
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Express
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Redux
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
                         Stripe
                       </div>
                     </li>
@@ -615,13 +719,12 @@ export default function RightSection() {
                 </span>
               </div>
             </li>
-            {/* Add more project items here */}
           </ul>
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section
+      {/* Blog Section - Hidden */}
+      {/* <section
         id="blog"
         ref={(el) => {
           sectionRefs.current[4] = el;
@@ -638,7 +741,7 @@ export default function RightSection() {
           <ul className="group/list">
             <li className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <img
                   alt="Blog post thumbnail"
                   loading="lazy"
@@ -688,7 +791,7 @@ export default function RightSection() {
             </li>
             <li className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <img
                   alt="Blog post thumbnail"
                   loading="lazy"
@@ -738,7 +841,7 @@ export default function RightSection() {
             </li>
             <li className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <img
                   alt="Blog post thumbnail"
                   loading="lazy"
@@ -788,7 +891,7 @@ export default function RightSection() {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section
@@ -799,19 +902,19 @@ export default function RightSection() {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-40 lg:scroll-mt-24 opacity-0 transition-all duration-700"
         aria-label="Contact information"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/95 light:bg-white/95 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 light:text-slate-900 lg:sr-only">
             Contact
           </h2>
         </div>
         <div>
-          <p className="mb-4 text-slate-400 leading-relaxed">
+          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
             I'm always Open to opportunities to contribute and grow <br />
             happy to connect!
           </p>
           <button
             onClick={() => setShowContactForm(!showContactForm)}
-            className="inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group transition-colors"
+            className="inline-flex items-center font-medium leading-tight text-slate-200 light:text-slate-900 hover:text-teal-300 light:hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group transition-colors"
           >
             <span>{showContactForm ? "Hide form" : "Get in touch"}</span>
             <svg
@@ -844,7 +947,7 @@ export default function RightSection() {
               <div className="group">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-slate-200 mb-2"
+                  className="block text-sm font-medium text-slate-200 light:text-slate-900 mb-2"
                 >
                   Name
                 </label>
@@ -855,7 +958,7 @@ export default function RightSection() {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full bg-transparent text-slate-200 px-0 py-2 border-0 border-b-2 border-slate-600 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500"
+                  className="w-full bg-transparent text-slate-200 light:text-slate-900 px-0 py-2 border-0 border-b-2 border-slate-600 light:border-slate-300 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500 light:placeholder-slate-400"
                   placeholder="Your name"
                 />
               </div>
@@ -864,7 +967,7 @@ export default function RightSection() {
               <div className="group">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-slate-200 mb-2"
+                  className="block text-sm font-medium text-slate-200 light:text-slate-900 mb-2"
                 >
                   Email
                 </label>
@@ -875,7 +978,7 @@ export default function RightSection() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full bg-transparent text-slate-200 px-0 py-2 border-0 border-b-2 border-slate-600 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500"
+                  className="w-full bg-transparent text-slate-200 light:text-slate-900 px-0 py-2 border-0 border-b-2 border-slate-600 light:border-slate-300 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500 light:placeholder-slate-400"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -884,7 +987,7 @@ export default function RightSection() {
               <div className="group">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-slate-200 mb-2"
+                  className="block text-sm font-medium text-slate-200 light:text-slate-900 mb-2"
                 >
                   Message
                 </label>
@@ -895,7 +998,7 @@ export default function RightSection() {
                   onChange={handleInputChange}
                   required
                   rows={4}
-                  className="w-full bg-transparent text-slate-200 px-0 py-2 border-0 border-b-2 border-slate-600 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500 resize-none"
+                  className="w-full bg-transparent text-slate-200 light:text-slate-900 px-0 py-2 border-0 border-b-2 border-slate-600 light:border-slate-300 focus:border-teal-300 focus:outline-none focus:ring-0 transition-colors duration-300 placeholder-slate-500 light:placeholder-slate-400 resize-none"
                   placeholder="Your message..."
                 />
               </div>
@@ -904,7 +1007,7 @@ export default function RightSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="inline-flex items-center justify-center px-6 py-3 bg-teal-400/10 hover:bg-teal-400/20 text-teal-300 font-medium rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="inline-flex items-center justify-center px-6 py-3 bg-teal-400/10 light:bg-teal-400/20 hover:bg-teal-400/20 light:hover:bg-teal-400/30 text-teal-300 light:text-teal-700 font-medium rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-teal-300 light:focus:ring-teal-600 focus:ring-offset-2 focus:ring-offset-slate-900 light:focus:ring-offset-white disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                 {!isSubmitting && (
@@ -927,7 +1030,7 @@ export default function RightSection() {
               showThankYou ? "max-h-20 opacity-100 mt-8" : "max-h-0 opacity-0"
             }`}
           >
-            <p className="text-slate-200 text-base leading-relaxed">
+            <p className="text-slate-200 light:text-slate-900 text-base leading-relaxed">
               Thanks! I'll get back to you soon.
             </p>
           </div>

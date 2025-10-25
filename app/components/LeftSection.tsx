@@ -17,21 +17,21 @@ export default function LeftSection({
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
+    { id: "education", label: "Education" },
     { id: "projects", label: "Projects" },
-    { id: "blog", label: "Blog" },
     { id: "contact", label: "Contact" },
   ];
 
   return (
     <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-200 light:text-slate-900 sm:text-5xl">
           Yash Chaudhari
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 light:text-slate-900 sm:text-xl">
           Full Stack Developer
         </h2>
-        <p className="mt-4 max-w-xs leading-normal text-slate-400">
+        <p className="mt-4 max-w-xs leading-normal text-slate-400 light:text-slate-600">
           React by day, Node.js by night. Turning ideas into production-ready
           apps.
         </p>
@@ -53,15 +53,15 @@ export default function LeftSection({
                   <span
                     className={`nav-indicator mr-4 h-px transition-all duration-300 ease-in-out ${
                       activeSection === section.id
-                        ? "w-16 bg-slate-200"
-                        : "w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200"
+                        ? "w-16 bg-slate-200 light:bg-slate-900"
+                        : "w-8 bg-slate-600 light:bg-slate-400 group-hover:w-16 group-hover:bg-slate-200 light:group-hover:bg-slate-900"
                     }`}
                   ></span>
                   <span
                     className={`nav-text text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
                       activeSection === section.id
-                        ? "text-slate-200"
-                        : "text-slate-500 group-hover:text-slate-200"
+                        ? "text-slate-200 light:text-slate-900"
+                        : "text-slate-500 light:text-slate-600 group-hover:text-slate-200 light:group-hover:text-slate-900"
                     }`}
                   >
                     {section.label}
@@ -83,7 +83,7 @@ export default function LeftSection({
             href="https://linkedin.com/in/yash-chaudhari-03733a30b"
             target="_blank"
             rel="noreferrer"
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 light:text-slate-600 hover:text-slate-200 light:hover:text-slate-900"
           >
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin size={24} />
@@ -94,7 +94,7 @@ export default function LeftSection({
             href="https://github.com/YashChaudhari-WORKING"
             target="_blank"
             rel="noreferrer"
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 light:text-slate-600 hover:text-slate-200 light:hover:text-slate-900"
           >
             <span className="sr-only">GitHub</span>
             <FaGithub size={24} />
@@ -105,7 +105,7 @@ export default function LeftSection({
             href="https://medium.com"
             target="_blank"
             rel="noreferrer"
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 light:text-slate-600 hover:text-slate-200 light:hover:text-slate-900"
           >
             <span className="sr-only">Medium</span>
             <FaMedium size={24} />
@@ -114,7 +114,7 @@ export default function LeftSection({
         <li>
           <a
             href="mailto:choudhariyash7890@gmail.com"
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 light:text-slate-600 hover:text-slate-200 light:hover:text-slate-900"
           >
             <span className="sr-only">Email</span>
             <FiMail size={24} />
@@ -123,7 +123,7 @@ export default function LeftSection({
         <li>
           <a
             href="tel:+919096842842"
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 light:text-slate-600 hover:text-slate-200 light:hover:text-slate-900"
           >
             <span className="sr-only">Phone</span>
             <FiPhone size={24} />

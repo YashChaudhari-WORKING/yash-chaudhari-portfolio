@@ -4,15 +4,18 @@ import { useState, useEffect } from "react";
 import LeftSection from "./components/LeftSection";
 import RightSection from "./components/RightSection";
 import MobileHeader from "./components/MobileHeader";
+import ThemeToggle from "./components/ThemeToggle";
+import { useTheme } from "./components/ThemeProvider";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [showMobileHeader, setShowMobileHeader] = useState(false);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "skills", "experience", "projects", "blog", "contact"];
+      const sections = ["about", "skills", "experience", "education", "projects", "contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
       // Check if user has scrolled to the bottom of the page
@@ -71,15 +74,23 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 relative">
+    <div className="bg-slate-900 light:bg-slate-50 leading-relaxed text-slate-400 light:text-slate-600 antialiased selection:bg-teal-300 selection:text-teal-900 light:selection:bg-teal-200 light:selection:text-teal-900 relative transition-colors duration-300">
+      {/* Theme Toggle Button */}
+      <ThemeToggle />
+
       {/* Cursor spotlight effect - Enhanced with dual gradients */}
       <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300"
         style={{
-          background: `
-            radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(20, 184, 166, 0.08), transparent 40%),
-            radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.05), transparent 80%)
-          `,
+          background: theme === "light"
+            ? `
+              radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(20, 184, 166, 0.15), transparent 40%),
+              radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.1), transparent 80%)
+            `
+            : `
+              radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(20, 184, 166, 0.08), transparent 40%),
+              radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.05), transparent 80%)
+            `,
         }}
       ></div>
 
