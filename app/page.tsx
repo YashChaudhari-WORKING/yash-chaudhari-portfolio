@@ -5,17 +5,23 @@ import LeftSection from "./components/LeftSection";
 import RightSection from "./components/RightSection";
 import MobileHeader from "./components/MobileHeader";
 import ThemeToggle from "./components/ThemeToggle";
-import { useTheme } from "./components/ThemeProvider";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [showMobileHeader, setShowMobileHeader] = useState(false);
-  const { theme } = useTheme();
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "skills", "experience", "education", "projects", "contact"];
+      const sections = [
+        "about",
+        "skills",
+        "experience",
+        "education",
+        "projects",
+        "contact",
+      ];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
       // Check if user has scrolled to the bottom of the page
@@ -73,6 +79,22 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const updateTheme = () => {
+      setTheme(document.documentElement.classList.contains("light") ? "light" : "dark");
+    };
+
+    updateTheme();
+
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="bg-slate-900 light:bg-slate-50 leading-relaxed text-slate-400 light:text-slate-600 antialiased selection:bg-teal-300 selection:text-teal-900 light:selection:bg-teal-200 light:selection:text-teal-900 relative transition-colors duration-300">
       {/* Theme Toggle Button */}
@@ -82,12 +104,13 @@ export default function Home() {
       <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300"
         style={{
-          background: theme === "light"
-            ? `
+          background:
+            theme === "light"
+              ? `
               radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(20, 184, 166, 0.15), transparent 40%),
               radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.1), transparent 80%)
             `
-            : `
+              : `
               radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(20, 184, 166, 0.08), transparent 40%),
               radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.05), transparent 80%)
             `,
@@ -102,7 +125,7 @@ export default function Home() {
         />
 
         {/* Main Content */}
-        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div className="mx-auto min-h-screen max-w-[1200px] px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
           <div className="lg:flex lg:justify-between lg:gap-4">
             <LeftSection activeSection={activeSection} />
             <RightSection />

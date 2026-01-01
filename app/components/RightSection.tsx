@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import BlurText from "./animated/TextBlur";
 
 export default function RightSection() {
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -85,7 +87,7 @@ export default function RightSection() {
   }, []);
 
   return (
-    <div className="lg:w-1/2 lg:py-24">
+    <div className="lg:w-1/2 md:py-18 lg:py-24">
       {/* About Section */}
       <section
         id="about"
@@ -107,10 +109,19 @@ export default function RightSection() {
               full-stack developer
             </span>{" "}
             passionate about creating reliable web and mobile solutions. I work
-            with <span className="font-medium text-slate-200 light:text-slate-900">React</span>,{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">Next.js</span>, and{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">React Native</span> to
-            build scalable applications that solve real problems. My strength
+            with{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              React
+            </span>
+            ,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              Next.js
+            </span>
+            , and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              React Native
+            </span>{" "}
+            to build scalable applications that solve real problems. My strength
             lies in understanding both the{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
               technical and business sides
@@ -121,18 +132,37 @@ export default function RightSection() {
           </p>
           <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
             I'm proficient in{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">JavaScript</span>,{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">TypeScript</span>,{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">Node.js</span>, and{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">Redux</span>, with
-            hands-on experience in{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">MongoDB</span>,{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">RESTful APIs</span>. In
-            my current role, I've contributed to architecting{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              JavaScript
+            </span>
+            ,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              TypeScript
+            </span>
+            ,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              Node.js
+            </span>
+            , and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              Redux
+            </span>
+            , with hands-on experience in{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              MongoDB
+            </span>
+            ,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              RESTful APIs
+            </span>
+            . In my current role, I've contributed to architecting{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
               enterprise websites
             </span>{" "}
-            and <span className="font-medium text-slate-200 light:text-slate-900">HRMS systems</span>
+            and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              HRMS systems
+            </span>
             , taking ownership of features from planning through deployment. I
             enjoy working closely with teams to ensure our solutions perform
             well in production and meet actual Client needs.
@@ -157,8 +187,10 @@ export default function RightSection() {
               architectural decisions
             </span>{" "}
             and{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">user experience</span>.
-            I'm looking for opportunities where I can contribute to meaningful
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              user experience
+            </span>
+            . I'm looking for opportunities where I can contribute to meaningful
             solutions while expanding my skills alongside experienced teammates.
           </p>
         </div>
@@ -181,33 +213,80 @@ export default function RightSection() {
         <div>
           {/* Frontend Technologies */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
-              Frontend Technologies
-            </h3>
-            <ul className="flex flex-wrap gap-2" aria-label="Frontend technologies">
+            <BlurText
+              text="Frontend Technologies"
+              className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900"
+              delay={50}
+              direction="bottom"
+              animateBy="words"
+            />
+            <ul
+              className="flex flex-wrap gap-2"
+              aria-label="Frontend technologies"
+            >
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   React.js
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Next.js
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   React Native
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Redux
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Tailwind CSS
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
             </ul>
@@ -215,23 +294,54 @@ export default function RightSection() {
 
           {/* Backend Technologies */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
-              Backend Technologies
-            </h3>
-            <ul className="flex flex-wrap gap-2" aria-label="Backend technologies">
+            <BlurText
+              text="Backend Technologies"
+              className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900"
+              delay={50}
+              direction="bottom"
+              animateBy="words"
+            />
+            <ul
+              className="flex flex-wrap gap-2"
+              aria-label="Backend technologies"
+            >
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Node.js
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Express.js
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   RESTful APIs
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
             </ul>
@@ -239,18 +349,41 @@ export default function RightSection() {
 
           {/* Programming Languages */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
-              Programming Languages
-            </h3>
-            <ul className="flex flex-wrap gap-2" aria-label="Programming languages">
+            <BlurText
+              text="Programming Languages"
+              className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900"
+              delay={50}
+              direction="bottom"
+              animateBy="words"
+            />
+            <ul
+              className="flex flex-wrap gap-2"
+              aria-label="Programming languages"
+            >
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   JavaScript
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   TypeScript
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
             </ul>
@@ -258,38 +391,93 @@ export default function RightSection() {
 
           {/* Database & Tools */}
           <div className="mb-8">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900">
-              Database & Tools
-            </h3>
-            <ul className="flex flex-wrap gap-2" aria-label="Database and development tools">
+            <BlurText
+              text="Database & Tools"
+              className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900"
+              delay={50}
+              direction="bottom"
+              animateBy="words"
+            />
+            <ul
+              className="flex flex-wrap gap-2"
+              aria-label="Database and development tools"
+            >
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   MongoDB
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   MySQL
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Git
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   GitHub
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Postman
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
               <li>
-                <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors">
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
                   Vercel
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
                 </div>
               </li>
             </ul>
@@ -330,25 +518,26 @@ export default function RightSection() {
                         aria-label="Senior Frontend Engineer at Upstatement"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                        <span>
-                          Junior Developer ·{" "}
-                          <span className="inline-block">
-                            Olio Global AdTech
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                              aria-hidden="true"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                clipRule="evenodd"
-                              ></path>
-                            </svg>
-                          </span>
-                        </span>
+                        <BlurText
+                          text="Junior Developer · Olio Global AdTech"
+                          className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 text-base"
+                          delay={50}
+                          direction="bottom"
+                          animateBy="words"
+                        />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
                       </a>
                     </div>
                   </h3>
@@ -375,33 +564,81 @@ export default function RightSection() {
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         React
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Next.js
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         React Native
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Redux
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Node.js
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         MongoDB
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                   </ul>
@@ -463,12 +700,17 @@ export default function RightSection() {
                 </header>
                 <div className="z-10 sm:col-span-6">
                   <h3 className="font-medium leading-snug">
-                    <div className="text-base text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 transition-colors">
-                      Master of Science in Computer Science
-                    </div>
+                    <BlurText
+                      text="Master of Science in Computer Science"
+                      className="text-base text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600"
+                      delay={50}
+                      direction="bottom"
+                      animateBy="words"
+                    />
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Shri Shivaji Vidya Prasarak Sanstha's Science College, Dhule, Maharashtra, India
+                    Shri Shivaji Vidya Prasarak Sanstha's Science College,
+                    Dhule, Maharashtra, India
                   </p>
                   <div className="mt-3 flex items-start gap-2">
                     <div className="mt-0.5">
@@ -508,12 +750,17 @@ export default function RightSection() {
                 </header>
                 <div className="z-10 sm:col-span-6">
                   <h3 className="font-medium leading-snug">
-                    <div className="text-base text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 transition-colors">
-                      Bachelor of Science in Computer Science
-                    </div>
+                    <BlurText
+                      text="Bachelor of Science in Computer Science"
+                      className="text-base text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600"
+                      delay={50}
+                      direction="bottom"
+                      animateBy="words"
+                    />
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Shri Shivaji Vidya Prasarak Sanstha's Science College, Dhule, Maharashtra, India
+                    Shri Shivaji Vidya Prasarak Sanstha's Science College,
+                    Dhule, Maharashtra, India
                   </p>
                   <div className="mt-3 flex items-start gap-2">
                     <div className="mt-0.5">
@@ -577,24 +824,26 @@ export default function RightSection() {
                       aria-label="Bento (Linear.app clone)"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        Bento (Linear.app Inspired){" "}
-                        <span className="inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
+                      <BlurText
+                        text="Bento (Linear.app Inspired)"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 text-base"
+                        delay={50}
+                        direction="bottom"
+                        animateBy="words"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
                     </a>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
@@ -612,23 +861,55 @@ export default function RightSection() {
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Next.js
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Express
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Redux
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Pusher.js
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                   </ul>
@@ -652,24 +933,26 @@ export default function RightSection() {
                       aria-label="E-Commerce Online Store"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        E-Commerce (Online Store) Website{" "}
-                        <span className="inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
+                      <BlurText
+                        text="E-Commerce (Online Store) Website"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 text-base"
+                        delay={50}
+                        direction="bottom"
+                        animateBy="words"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
                     </a>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
@@ -693,23 +976,55 @@ export default function RightSection() {
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Next.js
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Express
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Redux
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Stripe
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
                       </div>
                     </li>
                   </ul>
@@ -908,10 +1223,13 @@ export default function RightSection() {
           </h2>
         </div>
         <div>
-          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
-            I'm always Open to opportunities to contribute and grow <br />
-            happy to connect!
-          </p>
+          <BlurText
+            text="I'm always Open to opportunities to contribute and grow happy to connect!"
+            className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed"
+            delay={50}
+            direction="bottom"
+            animateBy="words"
+          />
           <button
             onClick={() => setShowContactForm(!showContactForm)}
             className="inline-flex items-center font-medium leading-tight text-slate-200 light:text-slate-900 hover:text-teal-300 light:hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group transition-colors"

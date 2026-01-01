@@ -2,6 +2,7 @@
 
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
+import BlurText from "./animated/TextBlur";
 
 export default function LeftSection({
   activeSection,
@@ -25,16 +26,24 @@ export default function LeftSection({
   return (
     <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 light:text-slate-900 sm:text-5xl">
-          Yash Chaudhari
-        </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 light:text-slate-900 sm:text-xl">
-          Full Stack Developer
-        </h2>
-        <p className="mt-4 max-w-xs leading-normal text-slate-400 light:text-slate-600">
-          React by day, Node.js by night. Turning ideas into production-ready
-          apps.
-        </p>
+        <BlurText
+          text="Yash Chaudhari"
+          className="text-4xl font-bold tracking-tight text-slate-200 light:text-slate-900 sm:text-5xl"
+          delay={50}
+          animateBy="words"
+        />
+        <BlurText
+          text="Full Stack Developer"
+          className="mt-3 text-lg font-medium tracking-tight text-slate-200 light:text-slate-900 sm:text-xl"
+          delay={80}
+          animateBy="words"
+        />
+        <BlurText
+          text="React by day, Node.js by night. Turning ideas into production-ready apps."
+          className="mt-4 max-w-xs leading-normal text-slate-400 light:text-slate-600"
+          delay={30}
+          animateBy="words"
+        />
 
         {/* Desktop Navigation */}
         <nav
@@ -102,7 +111,7 @@ export default function LeftSection({
         </li>
         <li>
           <a
-            href="https://medium.com"
+            href="https://medium.com/@choudhariyash7890"
             target="_blank"
             rel="noreferrer"
             className="text-slate-400 light:text-slate-600 hover:text-slate-200 light:hover:text-slate-900"
