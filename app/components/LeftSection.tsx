@@ -3,6 +3,7 @@
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import BlurText from "./animated/TextBlur";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function LeftSection({
   activeSection,
@@ -33,13 +34,13 @@ export default function LeftSection({
           animateBy="words"
         />
         <BlurText
-          text="Full Stack Developer"
+          text="Full-Stack Developer"
           className="mt-3 text-lg font-medium tracking-tight text-slate-200 light:text-slate-900 sm:text-xl"
           delay={80}
           animateBy="words"
         />
         <BlurText
-          text="React by day, Node.js by night. Turning ideas into production-ready apps."
+          text="I build web and mobile apps across the full stack — frontend, backend, and everything in between."
           className="mt-4 max-w-xs leading-normal text-slate-400 light:text-slate-600"
           delay={30}
           animateBy="words"
@@ -82,9 +83,42 @@ export default function LeftSection({
         </nav>
       </div>
 
-      {/* Social Links using Lucide */}
+      {/* Resume + Social Links */}
+      <div className="ml-1 mt-8 flex items-center gap-5">
+        <a
+          href="/static/Yash_Chaudhari_Full_Stack_Dev_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="group relative inline-flex items-center gap-2 rounded-full bg-teal-400/10 light:bg-teal-400/20 px-5 py-2.5 text-sm font-medium text-teal-300 light:text-teal-700 transition-all duration-300 hover:bg-teal-400/20 light:hover:bg-teal-400/30 overflow-hidden"
+        >
+          <span>View Resume</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1"
+            aria-hidden="true"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <BorderBeam
+            size={40}
+            duration={4}
+            delay={0}
+            reverse={false}
+            colorFrom="#14b8a6"
+            colorTo="#0d9488"
+          />
+        </a>
+      </div>
+
+      {/* Social Links */}
       <ul
-        className="ml-1 mt-8 flex items-center gap-5"
+        className="ml-1 mt-5 flex items-center gap-5"
         aria-label="Social media"
       >
         <li>

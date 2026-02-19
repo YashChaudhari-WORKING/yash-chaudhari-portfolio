@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Yash Chaudhari | Full Stack Developer",
   description:
-    "Portfolio of Yash Chaudhari, Full Stack Developer specializing in React, Next.js, and React Native.",
+    "Yash Chaudhari — Full-Stack Developer building production web and mobile applications with Next.js, React Native, Node.js, and MongoDB.",
   keywords: [
     "Full Stack Developer",
     "React",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Yash Chaudhari | Full Stack Developer",
     description:
-      "Portfolio of Yash Chaudhari, Full Stack Developer specializing in React, Next.js, and React Native.",
-    url: "https://your-portfolio-domain.com",
+      "Yash Chaudhari — Full-Stack Developer building production web and mobile applications with Next.js, React Native, Node.js, and MongoDB.",
+    url: "https://yashchaudhari.dev",
     siteName: "Yash Chaudhari Portfolio",
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yash Chaudhari | Full Stack Developer",
     description:
-      "Portfolio of Yash Chaudhari, Full Stack Developer specializing in React, Next.js, and React Native.",
+      "Yash Chaudhari — Full-Stack Developer building production web and mobile applications with Next.js, React Native, Node.js, and MongoDB.",
     images: ["/og-image.png"],
   },
 };

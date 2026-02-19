@@ -104,40 +104,17 @@ export default function RightSection() {
         </div>
         <div>
           <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
-            I'm Yash, a{" "}
+            Full-stack developer experienced in independently delivering production{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
-              full-stack developer
-            </span>{" "}
-            passionate about creating reliable web and mobile solutions. I work
-            with{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              React
+              web and mobile applications
             </span>
-            ,{" "}
+            . Skilled in building CMS-driven platforms, API architectures, SaaS products, and performance-optimized websites using{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
               Next.js
             </span>
-            , and{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              React Native
-            </span>{" "}
-            to build scalable applications that solve real problems. My strength
-            lies in understanding both the{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              technical and business sides
-            </span>{" "}
-            of development, allowing me to contribute meaningfully to the
-            complete development process while collaborating effectively with
-            cross-functional teams.
-          </p>
-          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
-            I'm proficient in{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              JavaScript
-            </span>
             ,{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
-              TypeScript
+              React Native
             </span>
             ,{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
@@ -145,53 +122,82 @@ export default function RightSection() {
             </span>
             , and{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
-              Redux
-            </span>
-            , with hands-on experience in{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
               MongoDB
+            </span>
+            .
+          </p>
+          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
+            Currently at{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              Olio Global AdTech
+            </span>
+            , where I've independently shipped an EdTech & placement platform, a scholarship discovery engine, enterprise e-commerce sites for international clients, and a complete{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              SaaS HRMS
+            </span>{" "}
+            with both web dashboard and React Native mobile app.
+          </p>
+          <p className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed">
+            These projects involve{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              SSR, SSG, and ISR
+            </span>{" "}
+            rendering strategies,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              RESTful API
+            </span>{" "}
+            design with Express,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              Redux
+            </span>{" "}
+            state management, and background automation through{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              cron jobs
+            </span>{" "}
+            and scheduled scraping pipelines — along with{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              Firebase
             </span>
             ,{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
-              RESTful APIs
+              Docker
             </span>
-            . In my current role, I've contributed to architecting{" "}
+            ,{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
-              enterprise websites
+              TypeScript
+            </span>
+            , and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              CI/CD
             </span>{" "}
-            and{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              HRMS systems
-            </span>
-            , taking ownership of features from planning through deployment. I
-            enjoy working closely with teams to ensure our solutions perform
-            well in production and meet actual Client needs.
+            with GitHub Actions.
           </p>
           <p className="text-slate-400 light:text-slate-600 leading-relaxed">
-            I believe in{" "}
+            On the security and data side, I implement{" "}
             <span className="font-medium text-slate-200 light:text-slate-900">
-              continuous learning
-            </span>{" "}
-            and staying current with technology trends. I've built projects like
-            an{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              e-commerce platform
-            </span>{" "}
-            with Stripe integration and a{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              project management tool (linear.app)
-            </span>{" "}
-            with real-time collaboration features. While I'm still growing as a
-            developer, I approach each project with attention to{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              architectural decisions
-            </span>{" "}
-            and{" "}
-            <span className="font-medium text-slate-200 light:text-slate-900">
-              user experience
+              JWT + bcrypt authentication
             </span>
-            . I'm looking for opportunities where I can contribute to meaningful
-            solutions while expanding my skills alongside experienced teammates.
+            ,{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              role-based access control (RBAC)
+            </span>
+            , and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              MongoDB indexing
+            </span>{" "}
+            with query optimization for faster data retrieval. I also handle{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              real-time features
+            </span>{" "}
+            using WebSockets, build paginated RESTful API architectures, and optimize frontend performance through{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              lazy loading
+            </span>
+            , code splitting, and{" "}
+            <span className="font-medium text-slate-200 light:text-slate-900">
+              structured data markup
+            </span>{" "}
+            for SEO.
           </p>
         </div>
       </section>
@@ -289,6 +295,19 @@ export default function RightSection() {
                   />
                 </div>
               </li>
+              <li>
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
+                  SSR / SSG / ISR
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -344,6 +363,32 @@ export default function RightSection() {
                   />
                 </div>
               </li>
+              <li>
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
+                  Firebase
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
+                </div>
+              </li>
+              <li>
+                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
+                  Web Scraping
+                  <BorderBeam
+                    size={30}
+                    duration={4}
+                    delay={0}
+                    reverse={false}
+                    colorFrom="#14b8a6"
+                    colorTo="#0d9488"
+                  />
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -389,10 +434,10 @@ export default function RightSection() {
             </ul>
           </div>
 
-          {/* Database & Tools */}
+          {/* Database & DevOps */}
           <div className="mb-8">
             <BlurText
-              text="Database & Tools"
+              text="Database & DevOps"
               className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200 light:text-slate-900"
               delay={50}
               direction="bottom"
@@ -400,7 +445,7 @@ export default function RightSection() {
             />
             <ul
               className="flex flex-wrap gap-2"
-              aria-label="Database and development tools"
+              aria-label="Database and DevOps tools"
             >
               <li>
                 <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
@@ -417,7 +462,7 @@ export default function RightSection() {
               </li>
               <li>
                 <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
-                  MySQL
+                  Mongoose
                   <BorderBeam
                     size={30}
                     duration={4}
@@ -430,7 +475,7 @@ export default function RightSection() {
               </li>
               <li>
                 <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
-                  Git
+                  Docker
                   <BorderBeam
                     size={30}
                     duration={4}
@@ -443,20 +488,7 @@ export default function RightSection() {
               </li>
               <li>
                 <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
-                  GitHub
-                  <BorderBeam
-                    size={30}
-                    duration={4}
-                    delay={0}
-                    reverse={false}
-                    colorFrom="#14b8a6"
-                    colorTo="#0d9488"
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-4 py-2 text-sm font-medium leading-5 text-teal-300 light:text-teal-700 hover:bg-teal-400/20 transition-colors overflow-hidden">
-                  Postman
+                  CI/CD
                   <BorderBeam
                     size={30}
                     duration={4}
@@ -505,7 +537,7 @@ export default function RightSection() {
               <div className="group relative grid pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                 <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
                 <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                  2024 — Present
+                  Nov 2024 — Present
                 </header>
                 <div className="z-10 sm:col-span-6">
                   <h3 className="font-medium leading-snug text-slate-200 light:text-slate-900">
@@ -515,11 +547,11 @@ export default function RightSection() {
                         href="https://olioglobaladtech.com/"
                         target="_blank"
                         rel="noreferrer"
-                        aria-label="Senior Frontend Engineer at Upstatement"
+                        aria-label="Associate Software Developer at Olio Global AdTech"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <BlurText
-                          text="Junior Developer · Olio Global AdTech"
+                          text="Associate Software Developer · Olio Global AdTech"
                           className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 text-base"
                           delay={50}
                           direction="bottom"
@@ -542,40 +574,21 @@ export default function RightSection() {
                     </div>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    At Olio Global AdTech, I've been contributing to enterprise
-                    solutions while learning from experienced developers. I
-                    helped develop websites for RheinMain and Atlas Technology
-                    using Next.js, focusing on frontend components and
-                    performance optimization. My key contribution was creating 8
-                    marketing landing pages that measurably improved campaign
-                    engagement rates.
+                    Built a CMS-driven platform for iTPreneur managing 20+ dynamic course pages, a blog engine, event calendars, and placement drives — all backend-configurable with zero frontend redeployment. Cut admin turnaround time by 60%.
                   </p>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    I've also contributed to building an HRMS system with React
-                    Native, developing mobile app features for leave management
-                    that now serve over 100 employees. Currently, I'm working on
-                    a real-time PMP Chat application and NovaGrad scholarship
-                    platform, gaining valuable experience with state management,
-                    data handling, and production deployment while collaborating
-                    with senior team members.
+                    Built NovoGrad.ai — a scholarship discovery platform aggregating 1,000+ scholarships from 50+ sources via automated scraping pipelines on cron jobs. Captures 2,000+ student enquiries/month through multi-step forms, backed by paginated REST APIs and role-based admin dashboards. Reduced data retrieval latency by 45% through MongoDB indexing.
+                  </p>
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
+                    Architected 2 Next.js platforms for RheinMain and Atlas Technology — 500+ product pages with SSR + SSG and multi-level filtering. Got page load from 3.2s down to 0.9s through lazy loading, image optimization, and code splitting. 90+ Lighthouse scores across the board.
+                  </p>
+                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
+                    Delivered a full-stack SaaS HRMS with a Next.js web dashboard and React Native mobile app, serving 100+ employees. Geo-location validated check-in/check-out, policy-driven leave and payroll workflows, 5+ cron-based automation jobs, and RBAC with JWT auth — reduced HR reporting time by 40%.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
                     aria-label="Technologies used"
                   >
-                    <li className="mr-1.5 mt-2">
-                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
-                        React
-                        <BorderBeam
-                          size={30}
-                          duration={4}
-                          delay={0}
-                          reverse={false}
-                          colorFrom="#14b8a6"
-                          colorTo="#0d9488"
-                        />
-                      </div>
-                    </li>
                     <li className="mr-1.5 mt-2">
                       <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         Next.js
@@ -592,19 +605,6 @@ export default function RightSection() {
                     <li className="mr-1.5 mt-2">
                       <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
                         React Native
-                        <BorderBeam
-                          size={30}
-                          duration={4}
-                          delay={0}
-                          reverse={false}
-                          colorFrom="#14b8a6"
-                          colorTo="#0d9488"
-                        />
-                      </div>
-                    </li>
-                    <li className="mr-1.5 mt-2">
-                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
-                        Redux
                         <BorderBeam
                           size={30}
                           duration={4}
@@ -641,37 +641,51 @@ export default function RightSection() {
                         />
                       </div>
                     </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
+                        Redux
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
+                        REST APIs
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
+                        Cron Jobs
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
             </li>
-            {/* Add more experience items here */}
           </ol>
 
-          {/* Resume Link */}
-          <div className="mt-12">
-            <a
-              className="inline-flex items-center font-medium leading-tight text-slate-200 light:text-slate-900 hover:text-teal-300 light:hover:text-teal-600 focus-visible:text-teal-300 light:focus-visible:text-teal-600 group"
-              href="/static/Yash_Chaudhari_Full_Stack_Developer_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span>View Full Resume</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
@@ -821,11 +835,11 @@ export default function RightSection() {
                       href="https://github.com/YashChaudhari-WORKING/Bento"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="Bento (Linear.app clone)"
+                      aria-label="Bento — project management platform"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <BlurText
-                        text="Bento (Linear.app Inspired)"
+                        text="Bento"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 text-base"
                         delay={50}
                         direction="bottom"
@@ -847,14 +861,10 @@ export default function RightSection() {
                     </a>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Developing a comprehensive project management platform using
-                    Next.js and TypeScript with real-time team collaboration,
-                    issue tracking, and sprint planning capabilities.
+                    A project management tool inspired by Linear.app. Designed the data model around issues, sprints, and team assignments, with real-time sync across clients using Pusher.js WebSockets so multiple people can work on the same board without stepping on each other.
                   </p>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Building features for task assignment, progress tracking,
-                    team workflows, and project roadmaps with intuitive
-                    drag-and-drop interface and status management.
+                    Built drag-and-drop Kanban boards with optimistic UI updates — the interface feels instant even before the server confirms. Redux handles the client state for complex sprint workflows, and the Express backend exposes a clean RESTful API with MongoDB persistence.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -912,6 +922,32 @@ export default function RightSection() {
                         />
                       </div>
                     </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
+                        TypeScript
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
+                        MongoDB
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
+                      </div>
+                    </li>
                   </ul>
                 </div>
                 <span className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
@@ -930,11 +966,11 @@ export default function RightSection() {
                       href="https://github.com/YashChaudhari-WORKING/MERN-_-E-Com-_-Online-store-"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="E-Commerce Online Store"
+                      aria-label="E-Commerce Platform"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <BlurText
-                        text="E-Commerce (Online Store) Website"
+                        text="E-Commerce Platform"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 light:text-slate-900 group-hover:text-teal-300 light:group-hover:text-teal-600 text-base"
                         delay={50}
                         direction="bottom"
@@ -956,20 +992,10 @@ export default function RightSection() {
                     </a>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Built a full-featured e-commerce platform using MERN stack
-                    with user authentication, product catalog, shopping cart
-                    functionality, and order management system.
+                    Full-stack e-commerce platform handling the complete purchase flow — browsing, cart, checkout, payment, and order tracking. Built JWT + bcrypt auth from scratch, integrated Stripe for payments, and wired up Nodemailer to send automated order confirmations.
                   </p>
                   <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Integrated Stripe payment gateway for secure transactions
-                    and implemented JWT-based authentication with bcrypt
-                    password encryption for enhanced security.
-                  </p>
-                  <p className="mt-2 text-sm leading-normal text-slate-400 light:text-slate-600">
-                    Developed admin dashboard for inventory management, order
-                    tracking, and user management with automated email
-                    notifications via Nodemailer for order confirmations and
-                    updates.
+                    The admin side has its own dashboard for managing inventory, processing orders, and viewing user analytics. Designed the MongoDB schema to handle product variants, order states, and user roles cleanly without over-engineering it.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -977,7 +1003,7 @@ export default function RightSection() {
                   >
                     <li className="mr-1.5 mt-2">
                       <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
-                        Next.js
+                        React
                         <BorderBeam
                           size={30}
                           duration={4}
@@ -1003,7 +1029,7 @@ export default function RightSection() {
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
-                        Redux
+                        MongoDB
                         <BorderBeam
                           size={30}
                           duration={4}
@@ -1027,186 +1053,29 @@ export default function RightSection() {
                         />
                       </div>
                     </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="relative flex items-center rounded-full bg-teal-400/10 light:bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 light:text-teal-700 overflow-hidden">
+                        Node.js
+                        <BorderBeam
+                          size={30}
+                          duration={4}
+                          delay={0}
+                          reverse={false}
+                          colorFrom="#14b8a6"
+                          colorTo="#0d9488"
+                        />
+                      </div>
+                    </li>
                   </ul>
                 </div>
                 <span className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                  2023 - 2024
+                  2023 — 2024
                 </span>
               </div>
             </li>
           </ul>
         </div>
       </section>
-
-      {/* Blog Section - Hidden */}
-      {/* <section
-        id="blog"
-        ref={(el) => {
-          sectionRefs.current[4] = el;
-        }}
-        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 opacity-0 transition-all duration-700"
-        aria-label="Blog posts"
-      >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-            Blog
-          </h2>
-        </div>
-        <div>
-          <ul className="group/list">
-            <li className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
-                <img
-                  alt="Blog post thumbnail"
-                  loading="lazy"
-                  width="200"
-                  height="48"
-                  decoding="async"
-                  className="z-10 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                  style={{ color: "transparent" }}
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 48'%3E%3Crect width='200' height='48' fill='%23334155'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2394a3b8' font-family='sans-serif' font-size='14'%3ENext.js%3C/text%3E%3C/svg%3E"
-                />
-                <div className="z-10 sm:order-2 sm:col-span-6">
-                  <div className="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    2024
-                  </div>
-                  <h3>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                      href="#"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Getting Started with Next.js 15"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        Getting Started with Next.js{" "}
-                        <span className="inline-block">
-                          15
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </li>
-            <li className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
-                <img
-                  alt="Blog post thumbnail"
-                  loading="lazy"
-                  width="200"
-                  height="48"
-                  decoding="async"
-                  className="z-10 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                  style={{ color: "transparent" }}
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 48'%3E%3Crect width='200' height='48' fill='%23334155'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2394a3b8' font-family='sans-serif' font-size='14'%3ETailwind%3C/text%3E%3C/svg%3E"
-                />
-                <div className="z-10 sm:order-2 sm:col-span-6">
-                  <div className="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    2024
-                  </div>
-                  <h3>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                      href="#"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Mastering Tailwind CSS Animations"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        Mastering Tailwind CSS{" "}
-                        <span className="inline-block">
-                          Animations
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </li>
-            <li className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all duration-300 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 light:lg:group-hover:bg-slate-200/50 lg:group-hover:shadow-[0_0_0_1px_rgba(148,163,184,0.1)]"></div>
-                <img
-                  alt="Blog post thumbnail"
-                  loading="lazy"
-                  width="200"
-                  height="48"
-                  decoding="async"
-                  className="z-10 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                  style={{ color: "transparent" }}
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 48'%3E%3Crect width='200' height='48' fill='%23334155'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2394a3b8' font-family='sans-serif' font-size='14'%3EReact%3C/text%3E%3C/svg%3E"
-                />
-                <div className="z-10 sm:order-2 sm:col-span-6">
-                  <div className="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    2024
-                  </div>
-                  <h3>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                      href="#"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Building Accessible React Components"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        Building Accessible React{" "}
-                        <span className="inline-block">
-                          Components
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> */}
 
       {/* Contact Section */}
       <section
@@ -1224,7 +1093,7 @@ export default function RightSection() {
         </div>
         <div>
           <BlurText
-            text="I'm always Open to opportunities to contribute and grow happy to connect!"
+            text="Have a project in mind, or just want to chat about building something? I'd love to hear from you."
             className="mb-4 text-slate-400 light:text-slate-600 leading-relaxed"
             delay={50}
             direction="bottom"
@@ -1355,38 +1224,6 @@ export default function RightSection() {
         </div>
       </section>
 
-      {/* <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-        <p>
-          Coded in{" "}
-          <a
-            href="https://code.visualstudio.com/"
-            className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Visual Studio Code
-          </a>
-          . Built with{" "}
-          <a
-            href="https://nextjs.org/"
-            className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Next.js
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://tailwindcss.com/"
-            className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          .
-        </p>
-      </footer> */}
     </div>
   );
 }

@@ -13,8 +13,8 @@ export default function MobileHeader({
     about: "About",
     skills: "Skills",
     experience: "Experience",
+    education: "Education",
     projects: "Projects",
-    blog: "Blog",
     contact: "Contact",
   };
 
