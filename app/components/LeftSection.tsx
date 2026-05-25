@@ -86,7 +86,7 @@ export default function LeftSection({
       {/* Resume + Social Links */}
       <div className="ml-1 mt-8 flex items-center gap-5">
         <a
-          href="/static/Yash_Chaudhari_Full_Stack_Dev_Resume.pdf"
+          href="/static/Yash_Chaudhari_Full_Stack_Dev.pdf"
           target="_blank"
           rel="noreferrer"
           className="group relative inline-flex items-center gap-2 rounded-full bg-teal-400/10 light:bg-teal-400/20 px-5 py-2.5 text-sm font-medium text-teal-300 light:text-teal-700 transition-all duration-300 hover:bg-teal-400/20 light:hover:bg-teal-400/30 overflow-hidden"
